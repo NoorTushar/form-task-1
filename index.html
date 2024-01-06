@@ -4,6 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form-Task-1</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h2>Create your Personal Profile</h2>
+    <form class="myForm">
+      <caption>
+        We want to know you! Please enter your personal information.
+      </caption>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fName"
+          >First Name
+          <input type="text" id="fName" />
+        </label>
+        <label for="lName"
+          >Last Name
+          <input type="text" id="lName" />
+        </label>
+        <label for="birthday"
+          >Birthday
+          <input type="date" id="birthday" />
+        </label>
+      </fieldset>
+
+      <caption>
+        Can you tell us a little bit more? We want to annoy you with unwanted
+        ads.
+      </caption>
+
+      <fieldset>
+        <legend>Further Information</legend>
+        <label for="color">
+          <input type="color" name="color" id="color" />
+        </label>
+        <label for="fav-pet"
+          >What is your favorite pet?
+          <select name="fav-pet" id="fav-pet">
+            <option value="">select an option</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="rabbit">Rabbit</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+  </body>
 </html>
