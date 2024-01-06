@@ -12,11 +12,13 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+.title {
+  margin-bottom: 20px;
+}
 .myForm {
   border: 1px solid black;
-  padding: 5px;
-  max-width: 500px;
+  padding: 15px;
+  max-width: 350px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -27,6 +29,8 @@ body {
   margin: 15px 0px;
 }
 .myForm fieldset {
+  margin: 10px 0;
+  padding: 15px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -34,6 +38,7 @@ body {
   -o-border-radius: 5px;
 }
 .myForm legend {
+  color: #e64310;
   margin-left: 10px;
   padding: 5px;
   border: 1px solid black;
@@ -46,12 +51,38 @@ body {
 .myForm label {
   display: block;
 }
-.myForm label input {
+.myForm label input,
+label select {
+  margin: 5px 0;
+  padding: 5px;
   display: block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-.myForm label input:not([type="color"]) {
+.myForm label input:not([type="color"]),
+label select {
   width: 100%;
 }
 .myForm label input[type="color"] {
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 0;
+}
+label select {
+  background-color: #e64310;
+  color: white;
+}
+input[type="submit"] {
+  color: white;
+  width: 100%;
+  padding: 5px 0;
+  background-color: #e64310;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
