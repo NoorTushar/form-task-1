@@ -65,6 +65,8 @@ label select {
 .myForm label input:not([type="color"]),
 label select {
   width: 100%;
+  border: 1px solid black;
+  outline: none;
 }
 .myForm label input[type="color"] {
   margin: 10px auto;
